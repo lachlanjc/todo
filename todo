@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Creates a Markdown file on the Desktop with the task name
+touch ~/Desktop/"$1.md"

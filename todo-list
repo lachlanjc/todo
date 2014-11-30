@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Nice little header
+echo "To-do list"
+echo "----------"
+
+# List the .md files on your Desktop, one on each line
+# then only show the file's name, not full path
+ls -t -1 ~/Desktop/*.md | xargs -n1 basename
