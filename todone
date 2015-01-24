@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -s ~/Desktop/$1.md ]
+then
+    echo ~/Desktop/$1.md is not empty. Please manually delete it.
+    exit 1
+else
+    rm ~/Desktop/$1.md
+fi
