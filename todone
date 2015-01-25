@@ -2,7 +2,7 @@
 
 if [ -s ~/Desktop/$1.md ]
 then
-    echo ~/Desktop/$1.md is not empty. Please manually delete it.
+    echo You have notes in $1.md, so you should archive or delete it manually.
     exit 1
 else
     rm ~/Desktop/$1.md
