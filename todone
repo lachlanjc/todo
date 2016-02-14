@@ -6,4 +6,5 @@ then
     exit 1
 else
     rm ~/Desktop/$1.md
+    echo ✅ $1
 fi
