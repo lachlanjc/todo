@@ -38,3 +38,7 @@ take-a-nap.md
 ```
 
 That's really all there is to it.
+
+___
+
+*A thing by @lachlanjc. MIT licensed.*
