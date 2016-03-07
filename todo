@@ -1,4 +1,22 @@
 #!/usr/bin/env bash
 
-# Creates a Markdown file on the Desktop with the task name
-touch ~/Desktop/"$1.md"
+while getopts a:r: option
+do
+  case $option in
+       a) 
+          touch ~/Desktop/"${OPTARG} "`date +%Y-%m-%d`".md"
+          ;;
+       r)
+          rm ~/Desktop/${OPTARG}.md
+          ;;
+       ?)
+         echo "Usage: todo [-ar] [arg]"
+         echo "-a add todo md file"
+         echo "-r remove todo md file"
+         exit
+         ;;
+   esac
+done
+
+# show the todo items
+find ~/Desktop -name "*.md" | awk -F '/' '{print $NF}'
